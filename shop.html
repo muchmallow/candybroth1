@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Candy Broth</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar-->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light amber lighten-4 scrolling-navbar mb-4 p-1">
+        <div class="container-fluid">
+
+            <!-- Navbar brand -->
+            <a class="navbar-brand ml-2" href="index.html">Candy_Broth</a>
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="animated-icon1"><span></span><span></span><span></span></div>
+            </button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-1">
+                        <a class="nav-link" href="https://www.instagram.com/candy_broth/"><i class="fab fa-lg fa-instagram mr-1"></i>Instagram<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-1">
+                        <a class="nav-link" href="about.html"><i class="fas fa-lg fa-child mr-1"></i>О Нас</a>
+                    </li>
+                    <li class="nav-item mr-1">
+                        <a class="nav-link" href="#"><i class="fas fa-lg fa-shopping-basket mr-1"></i>Магазин</a>
+                    </li>
+                    <li class="nav-item mr-1">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#modalDelivery"><i class="fas fa-lg fa-truck mr-1"></i>Способы доставки</a>
+                    </li>
+                    <li class="nav-item mr-1">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#modalContacts"><i class="fas fa-lg fa-phone mr-1"></i>Как заказать</a>
+                    </li>
+                </ul>
+                <!-- Links -->
+            </div>
+            <!-- Collapsible content -->
+        </div>
+    </nav>
+
+    <!-- Modal Delivery -->
+    <div class="modal fade" id="modalDelivery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-info" role="document">
+            <!--Content-->
+            <div class="modal-content amber lighten-5">
+                <!--Header-->
+                <div class="modal-header amber lighten-4">
+                    <p class="my-font-modal-header mt-3 ml-2">Способы доставки</p>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="black-text mr-2">&times;</span>
+                    </button>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <p class="my-font-modal-text">Мы отправляем товар по Украине Новой Почтой наложенным платежом. Предоплата берется в случае индивидуального заказа(подарочные букеты из сладостей, из фруктов, сыров, колбас, алкоголя и тд), для гарантии того, что Вы этот заказ заберете. Продукты могут потерять товарный вид при разборке букетов, спасибо за понимание. Доствака по Харькову - 60 грн. Есть самовывоз.</p>
+                    </div>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center amber lighten-4">
+                    <a type="button" class="btn btn-amber lighten-4 waves-effect" data-dismiss="modal"><i class="fas fa-check fa-2x mb-1 animated rotateIn"></i></a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+    <!-- Modal Contacts -->
+    <div class="modal fade" id="modalContacts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-info" role="document">
+            <!--Content-->
+            <div class="modal-content amber lighten-5">
+                <!--Header-->
+                <div class="modal-header amber lighten-4">
+                    <p class="my-font-modal-header mt-3 ml-2">Как заказать?</p>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="black-text mr-2">&times;</span>
+                    </button>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="list-group list-group-flush" id="list-tab" role="tablist">
+                                    <a class="list-group-item list-group-item-action list-group-item-warning my-font-modal-text active" id="list-Telegram-list" data-toggle="list" href="#listTelegram"
+                                       role="tab" aria-controls="home">Через Telegram</a>
+                                    <a class="list-group-item list-group-item-action list-group-item-warning my-font-modal-text" id="list-ViberAndPhoneNumbers-list" data-toggle="list" href="#listViberAndPhoneNumbers"
+                                       role="tab" aria-controls="profile">Viber или мобильный</a>
+                                    <a class="list-group-item list-group-item-action list-group-item-warning my-font-modal-text" id="list-InstagramDirect-list" data-toggle="list" href="#listInstagramDirect"
+                                       role="tab" aria-controls="settings">Через Instagram Direct</a>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="listTelegram" role="tabpanel" aria-labelledby="list-Telegram-list">
+                                        <p class="my-font-modal-text">Пишите в наши Telegram'ы в любое время - @Romeologin / @laravell ,все покажем - расскажем. Мы всегда Вам рады ;)</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="listViberAndPhoneNumbers" role="tabpanel" aria-labelledby="list-ViberAndPhoneNumbers-list">
+                                        <p class="my-font-modal-text">Мы ждем Вас в Viber/iMessage по номерам: <span style="font-family: 'Comfortaa 500', cursive">0964039567</span> и <span style="font-family: 'Comfortaa 500', cursive">0992689153</span> или просто позвоните ;)</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="listInstagramDirect" role="tabpanel" aria-labelledby="list-InstagramDirect-list">
+                                        <p class="my-font-modal-text">Заходите и подписывайтесь, если еще не подписались на наш аккаунт <a class="" href="https://www.instagram.com/candy_broth/">candy_broth</a>, пишите нам в Direct и заказывайте вкусняшки ;)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center amber lighten-4">
+                    <a type="button" class="btn btn-amber lighten-4 waves-effect" data-dismiss="modal"><i class="fas fa-check fa-2x mb-1 animated rotateIn"></i></a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+    <div class="carousel slide carousel-fade" data-ride="carousel" id="slides">
+
+        <ol class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+
+            <div class="carousel-item active">
+                <img src="img/mms2.jpg">
+                <div class="carousel-caption text-center">
+                    <h1 class="display-3 carousel-brand">Candy_Broth</h1>
+                    <h3 class="wow">Покупай сука</h3>
+                    <a href="https://www.instagram.com/candy_broth/" class="btn btn-outline-white btn-lg">Наш Instagram
+                        <i class="fab fa-lg fa-instagram ml-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/rittersport1.png">
+                <div class="carousel-caption text-center">
+                    <h1 class="display-3 carousel-brand">Candy_Broth</h1>
+                    <h3>Покупай блять</h3>
+                    <a href="https://www.instagram.com/candy_broth/" class="btn btn-outline-white btn-lg">Наш Instagram
+                        <i class="fab fa-lg fa-instagram ml-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/hersheys1.jpg">
+                <div class="carousel-caption">
+                    <h1 class="display-3 carousel-brand">Candy_Broth</h1>
+                    <h3>Покупай блять</h3>
+                    <a href="https://www.instagram.com/candy_broth/" class="btn btn-outline-white btn-lg">Наш Instagram
+                        <i class="fab fa-lg fa-instagram ml-1"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <main>
+        <!-- Navbar Main -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light amber lighten-4  mt-3 mb-5">
+                <span class="navbar-brand">Категории:</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+                        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Все товары
+                                <span class="sr-only"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </main>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- My JavaScript -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
